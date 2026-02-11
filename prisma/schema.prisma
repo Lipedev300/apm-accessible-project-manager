@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Projeto {
+  id         String    @id @default(uuid())
+  titulo     String
+  descricao  String? // O '?' permite que o campo seja nulo
+  dataInicio DateTime
+  dataFim    DateTime?
+  createdAt  DateTime  @default(now()) // Útil para saber quando o projeto foi criado
+}
