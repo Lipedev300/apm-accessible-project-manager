@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,7 +38,8 @@ body {
 }
 
 /* Foco para Acessibilidade (NVDA/Leitores de tela) */
-.campo-entrada:focus, .botao-criar:focus {
+.campo-entrada:focus,
+.botao-criar:focus {
   outline: 4px solid #0070f3;
   outline-offset: 2px;
 }
