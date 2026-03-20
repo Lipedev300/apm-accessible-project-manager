@@ -1,0 +1,11 @@
+{
+  "name": "apm-repository",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "web": "bun --filter @apm/web dev",
+    "mobile": "bun --filter @apm/mobile start"
+  }
+}

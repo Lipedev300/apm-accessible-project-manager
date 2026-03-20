@@ -1,0 +1,56 @@
+# --- Gerenciamento de Dependências ---
+node_modules/
+**/node_modules/
+.bundle/
+
+# --- Bun (Lockfiles e Cache) ---
+# Em monorepos, o lock é central, mas ignoramos caches locais
+bun.lockb
+bun.lock
+.bun/
+
+# --- React Router v7 (Web) ---
+.react-router/
+build/
+.cache/
+
+# --- Prisma (Banco de Dados) ---
+# Ignora o banco SQLite local (se usar) e arquivos gerados que o Prisma recria
+prisma/generated/
+dev.db
+dev.db-journal
+
+# --- Expo & Mobile (Android/iOS) ---
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+.metro-health-check*
+
+# Pastas nativas geradas pelo 'npx expo prebuild'
+ios
+android
+
+# Arquivos de chaves e certificados (Segurança Crítica)
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# --- Debug e Logs ---
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+
+# --- Variáveis de Ambiente (Privacidade) ---
+# Nunca suba o .env para o GitHub 
+.env
+.env*.local
+.env.production
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
