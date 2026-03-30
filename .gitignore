@@ -36,3 +36,27 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+# Bun
+bun.lockb
+.bun-build/
+
+# Docker
+# Ignora qualquer pasta de dados do banco que você criar localmente
+*_data/
+postgres/
+
+# Expo / Mobile
+.expo/
+*.jks
+*.p12
+*.key
+*.mobileprovision
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
